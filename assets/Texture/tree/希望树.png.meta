@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a56f6b11-c297-4c7e-b42e-f5d892810061",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "希望树": {
+      "ver": "1.0.3",
+      "uuid": "a4c747a2-e3a7-4d4f-b489-71e004d85dbd",
+      "rawTextureUuid": "a56f6b11-c297-4c7e-b42e-f5d892810061",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 61,
+      "height": 22,
+      "rawWidth": 61,
+      "rawHeight": 22,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

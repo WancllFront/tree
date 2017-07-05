@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cloud3",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 120,
+  "sample": 1,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -18,
+            273
+          ],
+          "motionPath": [
+            [
+              19.2,
+              276.1,
+              0.5,
+              276.3,
+              45.7,
+              275.8
+            ]
+          ]
+        },
+        {
+          "frame": 60,
+          "value": [
+            75,
+            272
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 120,
+          "value": [
+            -23.1,
+            275.9
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "12a23e72-c7c8-43c6-81a3-df9694e2ed25",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "百家乐": {
+      "ver": "1.0.3",
+      "uuid": "d6fec37d-c610-4d0b-af95-a8baf8a23891",
+      "rawTextureUuid": "12a23e72-c7c8-43c6-81a3-df9694e2ed25",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 218,
+      "height": 224,
+      "rawWidth": 218,
+      "rawHeight": 224,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

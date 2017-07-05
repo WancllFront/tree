@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ea8124eb-395b-4745-8924-b3bc67bc5f62",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "农场银行-收货地址": {
+      "ver": "1.0.3",
+      "uuid": "ece1959a-88ee-4720-868d-e882b0cbf0a7",
+      "rawTextureUuid": "ea8124eb-395b-4745-8924-b3bc67bc5f62",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 960,
+      "height": 542,
+      "rawWidth": 960,
+      "rawHeight": 542,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2bee2de0-8511-45b4-b6b3-a1caea62b255",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "账户明细": {
+      "ver": "1.0.3",
+      "uuid": "b014210e-a925-49d8-8d44-5a30531a06bf",
+      "rawTextureUuid": "2bee2de0-8511-45b4-b6b3-a1caea62b255",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 39,
+      "offsetY": 0,
+      "trimX": 78,
+      "trimY": 0,
+      "width": 1058,
+      "height": 639,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

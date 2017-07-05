@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cloud2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 80,
+  "sample": 1,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            429,
+            270
+          ],
+          "motionPath": [
+            [
+              487,
+              275,
+              459,
+              275,
+              513,
+              275
+            ]
+          ]
+        },
+        {
+          "frame": 40,
+          "value": [
+            536,
+            270
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 80,
+          "value": [
+            424,
+            266
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

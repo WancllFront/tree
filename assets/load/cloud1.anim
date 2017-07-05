@@ -1,0 +1,41 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cloud1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 9,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -68,
+            104
+          ]
+        },
+        {
+          "frame": 9,
+          "value": [
+            -453,
+            94
+          ]
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 9,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

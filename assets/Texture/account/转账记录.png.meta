@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fd183430-21d8-49ff-8b99-e112fa4b83d3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "转账记录": {
+      "ver": "1.0.3",
+      "uuid": "ec21ebf5-fb51-4be4-89c6-b365e581f1dd",
+      "rawTextureUuid": "fd183430-21d8-49ff-8b99-e112fa4b83d3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 38,
+      "offsetY": 0,
+      "trimX": 76,
+      "trimY": 0,
+      "width": 1060,
+      "height": 639,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

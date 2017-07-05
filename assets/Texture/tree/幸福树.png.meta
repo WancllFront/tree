@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e7245678-d501-4651-bc53-cbe6fa3e8b97",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "幸福树": {
+      "ver": "1.0.3",
+      "uuid": "07fe02d9-306c-4169-810c-55fb350e7747",
+      "rawTextureUuid": "e7245678-d501-4651-bc53-cbe6fa3e8b97",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 61,
+      "height": 22,
+      "rawWidth": 61,
+      "rawHeight": 22,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "01",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 4.444444444444445,
+  "sample": 18,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 1.1111111111111112,
+          "value": 1
+        },
+        {
+          "frame": 2.2222222222222223,
+          "value": 0
+        },
+        {
+          "frame": 3.3333333333333335,
+          "value": -1
+        },
+        {
+          "frame": 4.444444444444445,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "129646f2-4ad6-42e2-afde-8c496968c388",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "新能源发电": {
+      "ver": "1.0.3",
+      "uuid": "2ed8ec0b-06fc-4fe9-89a5-884deb5a50e1",
+      "rawTextureUuid": "129646f2-4ad6-42e2-afde-8c496968c388",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 35.5,
+      "offsetY": 0,
+      "trimX": 71,
+      "trimY": 0,
+      "width": 1065,
+      "height": 639,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "yan3",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 21,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 6,
+          "value": [
+            -362.2,
+            -49.3
+          ],
+          "motionPath": [
+            [
+              -317.3,
+              0.9,
+              -347.6,
+              -18.4,
+              -289.7,
+              18.4
+            ]
+          ]
+        },
+        {
+          "frame": 21,
+          "value": [
+            -258.6,
+            17
+          ],
+          "motionPath": []
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 6,
+          "value": 0.1
+        },
+        {
+          "frame": 21,
+          "value": 0.6
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 6,
+          "value": 0.1
+        },
+        {
+          "frame": 21,
+          "value": 0.6
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 6,
+          "value": 155
+        },
+        {
+          "frame": 21,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

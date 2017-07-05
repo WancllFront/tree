@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d23fa0d3-8fa3-47eb-a4e8-993f23ce4d61",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "兑换商品": {
+      "ver": "1.0.3",
+      "uuid": "4a9a37b9-6ca9-4cf5-868e-601b67dfbe3d",
+      "rawTextureUuid": "d23fa0d3-8fa3-47eb-a4e8-993f23ce4d61",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 160,
+      "height": 241,
+      "rawWidth": 160,
+      "rawHeight": 241,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
