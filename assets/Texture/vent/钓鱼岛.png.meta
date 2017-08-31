@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "62b84519-2803-414c-8c51-618257d4bedf",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "钓鱼岛": {
+      "ver": "1.0.3",
+      "uuid": "acc5fd5b-5c90-45d6-810b-38a15864a97e",
+      "rawTextureUuid": "62b84519-2803-414c-8c51-618257d4bedf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1136,
+      "height": 639,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "xiong",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            18,
+            109.19999999999999
+          ]
+        },
+        {
+          "frame": 4,
+          "value": [
+            18,
+            293.2
+          ]
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "b8cec6f6-f876-456d-bb58-0d8256ef2214"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "5b614c9d-09e2-47d6-b669-05ba69e6db32",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "08紫云树图片": {
+      "ver": "1.0.3",
+      "uuid": "a0ddf3fd-5a67-4f50-ad01-0b00c7567aeb",
+      "rawTextureUuid": "5b614c9d-09e2-47d6-b669-05ba69e6db32",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 442,
+      "offsetY": -127,
+      "trimX": 1395,
+      "trimY": 631,
+      "width": 1294,
+      "height": 792,
+      "rawWidth": 3200,
+      "rawHeight": 1800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

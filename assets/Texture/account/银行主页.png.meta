@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c3b574ca-e349-427b-b486-e097f5ddc961",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "银行主页": {
+      "ver": "1.0.3",
+      "uuid": "70390934-9494-4b0b-a16c-664d6a5d222f",
+      "rawTextureUuid": "c3b574ca-e349-427b-b486-e097f5ddc961",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 37,
+      "offsetY": 4,
+      "trimX": 74,
+      "trimY": 0,
+      "width": 1062,
+      "height": 631,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

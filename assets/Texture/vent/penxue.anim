@@ -1,0 +1,63 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "penxue",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.25,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "21372183-5de7-4fab-a304-98761405069d"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "c9a8c956-498a-4837-b807-160674537c96"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "f2cdad07-07bc-4c79-9f43-3442b3ebad88"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "a6b215b2-dc5d-4af7-a95b-aa24302ba894"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "cce2f999-4852-4dc8-84d4-4458a66101ac"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1.6
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1.6
+        }
+      ]
+    }
+  },
+  "events": []
+}

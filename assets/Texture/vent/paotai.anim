@@ -1,0 +1,198 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "paotai",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.925,
+  "sample": 40,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 0.75,
+          "value": 255
+        },
+        {
+          "frame": 1.7,
+          "value": 255
+        }
+      ],
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            44,
+            -114
+          ]
+        },
+        {
+          "frame": 0.75,
+          "value": [
+            44,
+            -114
+          ]
+        },
+        {
+          "frame": 0.825,
+          "value": [
+            106,
+            -41
+          ],
+          "motionPath": [
+            [
+              186,
+              60,
+              95,
+              0,
+              271,
+              117
+            ]
+          ]
+        },
+        {
+          "frame": 1.6,
+          "value": [
+            396,
+            120
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 1.625,
+          "value": [
+            396,
+            120
+          ]
+        },
+        {
+          "frame": 1.7,
+          "value": [
+            396,
+            120
+          ]
+        }
+      ],
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.65,
+          "value": -22
+        },
+        {
+          "frame": 0.8,
+          "value": -1
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 0.1
+        },
+        {
+          "frame": 1.675,
+          "value": 0.1
+        },
+        {
+          "frame": 1.7,
+          "value": 1
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 0.1
+        },
+        {
+          "frame": 1.675,
+          "value": 0.1
+        },
+        {
+          "frame": 1.7,
+          "value": 1
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0b47bbe3-1a23-4e9d-ab8f-d9148316cdbd"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "e920a884-d839-4ec3-b097-8503c0a91dc1"
+            }
+          },
+          {
+            "frame": 1.7,
+            "value": {
+              "__uuid__": "c6566d6d-ad93-4f66-8190-75cd11a22403"
+            }
+          },
+          {
+            "frame": 1.725,
+            "value": {
+              "__uuid__": "a0898a04-c5a8-4080-8d09-4d7ed93c3689"
+            }
+          },
+          {
+            "frame": 1.75,
+            "value": {
+              "__uuid__": "0cfeb52f-f2f9-4783-9fa3-c158c315c408"
+            }
+          },
+          {
+            "frame": 1.775,
+            "value": {
+              "__uuid__": "4bb58ed9-ca3f-4daf-aa66-57f94b8a8198"
+            }
+          },
+          {
+            "frame": 1.8,
+            "value": {
+              "__uuid__": "00422ca5-8341-4064-8104-9ac0e1822335"
+            }
+          },
+          {
+            "frame": 1.825,
+            "value": {
+              "__uuid__": "98f12988-1fac-49f2-8b62-2fe94473f838"
+            }
+          },
+          {
+            "frame": 1.85,
+            "value": {
+              "__uuid__": "5b844f1d-c522-4fa5-81c4-281124d97266"
+            }
+          },
+          {
+            "frame": 1.875,
+            "value": {
+              "__uuid__": "c0158924-d529-4e08-933b-505564ed5df8"
+            }
+          },
+          {
+            "frame": 1.9,
+            "value": {
+              "__uuid__": "954d6a2d-5e99-4cdd-9500-8fc3030904a7"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

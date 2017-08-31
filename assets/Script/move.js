@@ -3,119 +3,57 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        btnFriend1: {
-            default: null,
-            type: cc.Button
-        },
-        btnFriend2: {
-            default: null,
-            type: cc.Button
-        },
-        btnFriend3: {
-            default: null,
-            type: cc.Button
-        },
+        btnFriend1: cc.Button,
+        btnFriend2: cc.Button,
 
-        nodeContent: {
-            default: null,
-            type: cc.Node
-        },
+        nodeContent: cc.Node,
 
-        prefabItem: {
-            default: null,
-            type: cc.Prefab
-        },
+        prefabItem: cc.Prefab,
 
-        btnNext:{
-            default: null,
-            type: cc.Button
-        },
-        btnPrev: {
-            default: null,
-            type: cc.Button
-        },
-        nodeFriend1:{
-            default: null,
-            type: cc.Node
-        },
-        nodeFriend2: {
-            default: null,
-            type: cc.Node
-        },
-        nodeFriend3: {
-            default: null,
-            type: cc.Node
-        },
+        btnNext: cc.Button,
+        btnPrev: cc.Button,
+        nodeFriend1: cc.Node,
+        nodeFriend2: cc.Node,
+        
 
-         audio: {
-            url: cc.AudioClip,
-            default: null
-        },
+        audio: cc.AudioClip,
 
-        nodeAny:{
-            default: null,
-            type: cc.Node
-        }
-
-       
+        nodeAny: cc.Node
     },
 
-    btnController: function(){
+    btnController: function () {
         var self = this;
 
-        this.btnFriend1.node.on('click',function(){
-             if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
+        this.btnFriend1.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             self.type = 1;
             self.getFriend();
             self.nodeFriend2.active = false;
-            self.nodeFriend3.active = false;
+            
             self.nodeFriend1.active = true;
         });
-         this.btnFriend2.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-             self.type = 2;
-             self.getFriend();
+        this.btnFriend2.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+            self.type = 2;
+            self.getFriend();
             self.nodeFriend1.active = false;
-            self.nodeFriend3.active = false;
+            
             self.nodeFriend2.active = true;
         });
-         this.btnFriend3.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-             self.type = 3;
-             self.getFriend();
-            self.nodeFriend2.active = false;
-            self.nodeFriend1.active = false;
-            self.nodeFriend3.active = true;
-        });
 
-        this.btnNext.node.on('click',function(){
-             if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-            self.page +=1;
+        this.btnNext.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+            self.page += 1;
             self.getFriend();
         });
-         this.btnPrev.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-            self.page -=1;
+        this.btnPrev.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+            self.page -= 1;
             self.getFriend();
         });
     },
 
-    getFriend: function(){
+    getFriend: function () {
         var self = this;
         var userinfo = com.getUser();
         var list = {};
@@ -123,76 +61,77 @@ cc.Class({
         list.type = this.type;
         list.page = this.page;
 
+        self.nodeContent.removeAllChildren();
 
-        if(this.page == 1){
+        if (this.page == 1) {
             this.btnPrev.node.active = false;
-        }else{
+        } else {
             this.btnPrev.node.active = true;
         }
-        
+
         var url = com.yuming + com.donwuser;
-        com.async(url,function(resp){
-            if(resp.msg1 == 'success'){
+        com.async(url, function (resp) {
+            if (resp.msg1 == 'success') {
                 var friendInfo = resp.msg3;
 
-                if(friendInfo.length < 10){
+                if (friendInfo.length < 10) {
                     self.btnNext.node.active = false;
-                }else{
+                } else {
                     self.btnNext.node.active = true;
                 }
                 self.nodeContent.removeAllChildren();
-                 for(var i = 0 ;i < friendInfo.length;i++){
-                        var pref = cc.instantiate(self.prefabItem);
-                        pref.getComponent(cc.Label).string ='点击转账给好友：'+ friendInfo[i].UserName+'【'+friendInfo[i].UserCode+'】'+'   【'+(friendInfo[i].tlevel == 1? '已激活':'未激活')+'】';
-                        pref.getComponent(cc.Label).fontSize = 20;
-                       
-                        var nodeUsercode = new cc.Node();
-                        nodeUsercode.name = 'nodeusercode';
-                        nodeUsercode.addComponent(cc.Label); 
-                        nodeUsercode.getComponent(cc.Label).string = friendInfo[i].UserCode;
-                        
-                        nodeUsercode.active = false;  
-                       
-                        pref.addChild(nodeUsercode);
+                for (var i = 0; i < friendInfo.length; i++) {
+                    var pref = cc.instantiate(self.prefabItem);
+                    pref.getComponent(cc.Label).string = '点击转赠给好友：' + friendInfo[i].UserName + '【' + friendInfo[i].UserCode + '】' + '   【' + (friendInfo[i].tlevel == 0 ? '未激活' : '已激活') + '】';
+                    pref.getComponent(cc.Label).fontSize = 20;
 
-                        pref.getComponent(cc.Button).node.on('click',function(event){
-                              if(self.radio == 2){
-                                }else{
-                                    cc.audioEngine.play(self.audio, false, 1);
-                                }
-                                var button = event.detail;
-                                window.moveUserCode = button.node.getChildByName('nodeusercode').getComponent(cc.Label).string;
-                              
-                               self.node.active = false;
-                               self.nodeAny.active = true;
+                    var nodeUsercode = new cc.Node();
+                    nodeUsercode.name = 'nodeusercode';
+                    nodeUsercode.addComponent(cc.Label);
+                    nodeUsercode.getComponent(cc.Label).string = friendInfo[i].UserCode;
 
-                            });
-                        pref.setPosition(50 ,-50*(i+1));
-                        self.nodeContent.addChild(pref);
+                    nodeUsercode.active = false;
+
+                    pref.addChild(nodeUsercode);
+
+                    pref.getComponent(cc.Button).node.on('click', function (event) {
+                        if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+                        var button = event.detail;
+                        window.moveUserCode = button.node.getChildByName('nodeusercode').getComponent(cc.Label).string;
+
+                        self.node.active = false;
+                        self.nodeAny.active = true;
+
+                    });
+                    pref.setPosition(50, -50 * (i + 1));
+                    self.nodeContent.addChild(pref);
                 }
 
             }
-        },list);
+        }, list);
     },
 
-    onEnable:function(){
+    onEnable: function () {
         this.nodeContent.removeAllChildren();
         this.page = 1;
         this.type = 1;
         this.btnPrev.node.active = false;
+        this.nodeFriend2.active = false;
+        
+        this.nodeFriend1.active = true;
         this.getFriend();
     },
 
     // use this for initialization
     onLoad: function () {
         this.radio = cc.sys.localStorage.getItem('radio');
-       
+
         this.page = 1;
         this.type = 1;
         this.btnPrev.node.active = false;
         this.btnController();
-        this.getFriend();
-      
+
+
     },
 
     // called every frame, uncomment this function to activate update callback

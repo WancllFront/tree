@@ -1,0 +1,164 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "wu",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            300,
+            30
+          ]
+        },
+        {
+          "frame": 0.1,
+          "value": [
+            296,
+            9
+          ]
+        },
+        {
+          "frame": 0.2,
+          "value": [
+            270,
+            -9
+          ]
+        },
+        {
+          "frame": 0.3,
+          "value": [
+            235,
+            -33
+          ]
+        },
+        {
+          "frame": 0.4,
+          "value": [
+            191,
+            -52
+          ]
+        },
+        {
+          "frame": 0.5,
+          "value": [
+            156,
+            -71
+          ]
+        },
+        {
+          "frame": 0.6,
+          "value": [
+            115,
+            -96
+          ]
+        },
+        {
+          "frame": 0.7,
+          "value": [
+            80,
+            -121
+          ]
+        },
+        {
+          "frame": 0.8,
+          "value": [
+            45,
+            -146
+          ]
+        },
+        {
+          "frame": 0.9,
+          "value": [
+            3,
+            -169
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            -38,
+            -188
+          ]
+        },
+        {
+          "frame": 1.1,
+          "value": [
+            -80,
+            -206
+          ]
+        },
+        {
+          "frame": 1.2,
+          "value": [
+            -106,
+            -216
+          ]
+        }
+      ],
+      "rotation": [
+        {
+          "frame": 0.1,
+          "value": -11.1
+        },
+        {
+          "frame": 0.5,
+          "value": -12.7
+        },
+        {
+          "frame": 0.6,
+          "value": -14.3
+        },
+        {
+          "frame": 0.7,
+          "value": -14.8
+        },
+        {
+          "frame": 0.8,
+          "value": -15.6
+        },
+        {
+          "frame": 0.9,
+          "value": -13.3
+        },
+        {
+          "frame": 1,
+          "value": -11.1
+        },
+        {
+          "frame": 1.1,
+          "value": -8.3
+        },
+        {
+          "frame": 1.2,
+          "value": -5.7
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5797f1ef-84d5-4403-9082-facce6fa178d"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "46246333-6dcb-4435-b8b8-d9e15484d4dc"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

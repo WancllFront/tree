@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "1e4db95c-e685-44e1-b2a8-4fd255f6f521",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "texasbattle_pool_rank_first": {
+      "ver": "1.0.3",
+      "uuid": "d478643c-1da3-4f0e-9a33-1de000219891",
+      "rawTextureUuid": "1e4db95c-e685-44e1-b2a8-4fd255f6f521",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 36,
+      "height": 32,
+      "rawWidth": 36,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

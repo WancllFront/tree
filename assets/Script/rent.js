@@ -3,79 +3,30 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        btnRent:{
-            default: null,
-            type: cc.Button
-        },
-        btnGain:{
-            default: null,
-            type: cc.Button
-        },
-        labelGain:{
-            default:null,
-            type: cc.Label
-        },
-        labelRest:{
-            default: null,
-            type: cc.Label
-        },
+        btnRent: cc.Button,
+        btnGain: cc.Button,
+        labelGain: cc.Label,
+        labelRest: cc.Label,
 
-        nodeShow: {
-            default: null,
-            type: cc.Node
-        },
+        nodeShow: cc.Node,
 
-        btnClose: {
-            default: null,
-            type: cc.Button
-        },
+        btnClose: cc.Button,
 
-        editboxPwd: {
-            default: null,
-            type: cc.EditBox
-        },
-
-
-
-        nodeTipSuccess: {
-            default: null,
-            type: cc.Node
-        },
-        nodeTipError: {
-            default: null,
-            type: cc.Node
-        },
-        btnTipSuccess:{
-            default:null,
-            type: cc.Button
-        },
-        btnTipError: {
-            default:null,
-            type: cc.Button
-        },
-        labelTipSuccess: {
-            default: null,
-            type: cc.Label
-        },
-         labelTipError: {
-            default: null,
-            type: cc.Label
-        },
-         audio: {
-            url: cc.AudioClip,
-            default: null
-        },
-
-
-
-        
+        editboxPwd: cc.EditBox,
+        nodeTipSuccess: cc.Node,
+        nodeTipError: cc.Node,
+        btnTipSuccess: cc.Button,
+        btnTipError: cc.Button,
+        labelTipSuccess: cc.Label,
+        labelTipError: cc.Label,
+        audio: cc.AudioClip,
     },
 
-    onEnable:function(){
-          this.radio = cc.sys.localStorage.getItem('radio');
+    onEnable: function () {
+        this.radio = cc.sys.localStorage.getItem('radio');
 
         var self = this;
-        var url  = com.yuming + com.treelst;
+        var url = com.yuming + com.treelst;
         var grade = 20;
         var uid = com.getUser().ID;
         //uid = 144
@@ -83,16 +34,16 @@ cc.Class({
         var list = {};
         list.grade = 20;
         list.uid = uid;
-        console.log('载入')
 
-        com.async(url,function(resp){
-            if(resp.msg1 == 'success'){
 
-                if(resp.msg3.length == 0){
-                     self.nodeShow.active = false;
+        com.async(url, function (resp) {
+            if (resp.msg1 == 'success') {
+
+                if (resp.msg3.length == 0) {
+                    self.nodeShow.active = false;
                     self.btnGain.node.active = false;
                     self.btnRent.node.active = true;
-                }else{
+                } else {
                     var info = resp.msg3[0];
                     self.labelRest.string = 36 - info.lunshu;
                     self.labelGain.string = info.lunshu * 2000;
@@ -101,17 +52,16 @@ cc.Class({
                     self.btnRent.node.active = false;
                 }
             }
-        },list);
+        }, list);
 
     },
 
     // use this for initialization
     onLoad: function () {
 
-         this.radio = cc.sys.localStorage.getItem('radio');
-
+        this.radio = cc.sys.localStorage.getItem('radio');
         var self = this;
-        var url  = com.yuming + com.treelst;
+        var url = com.yuming + com.treelst;
         var grade = 20;
         var uid = com.getUser().ID;
         //uid = 144
@@ -119,103 +69,94 @@ cc.Class({
         var list = {};
         list.grade = 20;
         list.uid = uid;
-        console.log('载入')
 
-        com.async(url,function(resp){
-            if(resp.msg1 == 'success'){
 
-                if(resp.msg3.length == 0){
-                     self.nodeShow.active = false;
-                    self.btnGain.node.active = false;
-                    self.btnRent.node.active = true;
-                }else{
-                    var info = resp.msg3[0];
-                    self.labelRest.string = 36 - info.lunshu;
-                    self.labelGain.string = info.lunshu * 2000;
-                    self.nodeShow.active = true;
-                    self.btnGain.node.active = true;
-                    self.btnRent.node.active = false;
-                }
+
+        this.btnGain.node.on('click', function () {
+            if (self.radio == 2) {
+            } else {
+                cc.audioEngine.play(self.audio, false, 1);
             }
-        },list);
-
-        this.btnGain.node.on('click',function(){
-             if(self.radio == 2){
-                }else{
-                    cc.audioEngine.play(self.audio, false, 1);
-                }
             var granUrl = com.yuming + com.shouhuo;
-             com.async(granUrl,function(resp){
-                 if(resp.msg1 == 'success'){
-                     console.log('收获成功');
-                      self.nodeTipSuccess.active = true;
-                      self.labelTipSuccess.string = resp.msg2;
-                 }else{
-                     self.nodeTipError.active = true;
-                     self.labelTipError.string = resp.msg2;
-                 }
-                 //转账更新数据 
-                        com.updateUser();
-             },list);
-        });
-        this.btnRent.node.on('click',function(){
-             if(self.radio == 2){
-                }else{
-                    cc.audioEngine.play(self.audio, false, 1);
+            com.async(granUrl, function (resp) {
+                if (resp.msg1 == 'success') {
+
+                    self.nodeTipSuccess.active = true;
+                    self.labelTipSuccess.string = resp.msg2 || '收获成功';
+
+                    self.labelGain.string = parseInt(self.labelGain.string) + 2000;
+                    self.labelRest.string = parseInt(self.labelRest.string) - 1;
+
+                } else {
+                    self.nodeTipError.active = true;
+                    self.labelTipError.string = resp.msg2 || '收获失败，请稍后再试';
                 }
+                //更新数据 
+                com.updateUser();
+            }, list);
+        });
+        //租赁
+
+        this.btnRent.node.on('click', function () {
+
+            if (self.radio == 2) {
+            } else {
+                cc.audioEngine.play(self.audio, false, 1);
+            }
             var list2 = {};
             list2.uid = uid;
             list2.grade = 20;
             list2.pwd = self.editboxPwd.string;
-            if(list2.pwd != ''){
+            self.editboxPwd.string = '';
+            if (list2.pwd != '') {
                 var rentUrl = com.yuming + com.zhu;
-                com.async(rentUrl,function(resp){
-                    if(resp.msg1 == 'success'){
-                        console.log('租赁成功');
+                com.async(rentUrl, function (resp) {
+                    if (resp.msg1 == 'success') {
+
                         self.labelRest.string = 36;
                         self.labelGain.string = 0;
                         self.nodeShow.active = true;
                         self.btnGain.node.active = true;
                         self.btnRent.node.active = false;
-                         self.nodeTipSuccess.active = true;
-                      self.labelTipSuccess.string = resp.msg2;
-                    }else{
+                        self.nodeTipSuccess.active = true;
+                        self.labelTipSuccess.string = resp.msg2 || '租赁成功';
+                    } else {
                         self.nodeTipError.active = true;
-                        self.labelTipError.string = resp.msg2;
+                        self.labelTipError.string = resp.msg2 || '租赁失败，请稍后再试';
                     }
-                    //转账更新数据 
-                        com.updateUser();
-                },list2)
-            }else{
-                 self.nodeTipError.active = true;
-                 self.labelTipError.string = '请输入交易密码';
+                    //更新数据 
+                    com.updateUser();
+                }, list2)
+            } else {
+                self.nodeTipError.active = true;
+                self.labelTipError.string = '请输入交易密码';
             }
-            
-            
+
+
         });
 
-        this.btnClose.node.on('click',function(){
-            console.log('关闭窗口');
-             if(self.radio == 2){
-                }else{
-                    cc.audioEngine.play(self.audio, false, 1);
-                }
+        this.btnClose.node.on('click', function () {
+
+            if (self.radio == 2) {
+            } else {
+                cc.audioEngine.play(self.audio, false, 1);
+            }
             cc.director.loadScene('hall');
         });
 
 
-         this.btnTipSuccess.node.on('click',function(){
-              if(self.radio == 2){
-                }else{
-                    cc.audioEngine.play(self.audio, false, 1);
-                }
+        this.btnTipSuccess.node.on('click', function () {
+            if (self.radio == 2) {
+            } else {
+                cc.audioEngine.play(self.audio, false, 1);
+            }
             self.nodeTipSuccess.active = false;
         });
-         this.btnTipError.node.on('click',function(){
-              if(self.radio == 2){
-                }else{
-                    cc.audioEngine.play(self.audio, false, 1);
-                }
+        this.btnTipError.node.on('click', function () {
+            if (self.radio == 2) {
+            } else {
+                cc.audioEngine.play(self.audio, false, 1);
+            }
             self.nodeTipError.active = false;
         });
     },

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8655764d-86b9-42cb-a501-70f57ebe66de",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "渔网动态图5": {
+      "ver": "1.0.3",
+      "uuid": "ea0cd8b1-4ceb-49bb-980c-f0059df591d2",
+      "rawTextureUuid": "8655764d-86b9-42cb-a501-70f57ebe66de",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 271.5,
+      "offsetY": 17,
+      "trimX": 570,
+      "trimY": 172,
+      "width": 539,
+      "height": 261,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

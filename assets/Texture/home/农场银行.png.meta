@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "6b5f172e-b58f-4bc1-a543-1beee3c089ad",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "农场银行": {
+      "ver": "1.0.3",
+      "uuid": "29957f45-15bd-48bd-a418-61f9a2d25693",
+      "rawTextureUuid": "6b5f172e-b58f-4bc1-a543-1beee3c089ad",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 164,
+      "height": 43,
+      "rawWidth": 164,
+      "rawHeight": 43,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

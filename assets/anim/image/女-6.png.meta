@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "884c3371-0201-45d7-bd8d-863814bd7ffc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "女-6": {
+      "ver": "1.0.3",
+      "uuid": "994849b4-bac4-43cb-8782-664fbbdc02c5",
+      "rawTextureUuid": "884c3371-0201-45d7-bd8d-863814bd7ffc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -95.5,
+      "offsetY": -51,
+      "trimX": 203,
+      "trimY": 142,
+      "width": 239,
+      "height": 399,
+      "rawWidth": 836,
+      "rawHeight": 581,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

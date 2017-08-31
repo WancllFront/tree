@@ -119,31 +119,14 @@ cc.Class({
         var list = {};
         list.grade = 30;
         list.uid = uid;
-        console.log('载入')
+       
 
-        com.async(url,function(resp){
-            if(resp.msg1 == 'success'){
-
-                if(resp.msg3.length == 0){
-                     self.nodeShow.active = false;
-                    self.btnGain.node.active = false;
-                    self.btnRent.node.active = true;
-                }else{
-                    var info = resp.msg3[0];
-                    self.labelRest.string = 24 - info.lunshu;
-                    self.labelGain.string = info.lunshu * 3750;
-                    self.nodeShow.active = true;
-                    self.btnGain.node.active = true;
-                    self.btnRent.node.active = false;
-                }
-            }
-        },list);
-
+      
         this.btnGain.node.on('click',function(){
             var granUrl = com.yuming + com.shouhuo;
              com.async(granUrl,function(resp){
                  if(resp.msg1 == 'success'){
-                     console.log('收获成功');
+                     
                       self.nodeTipSuccess.active = true;
                       self.labelTipSuccess.string = resp.msg2;
                  }else{
@@ -166,7 +149,7 @@ cc.Class({
                 var rentUrl = com.yuming + com.zhu;
                 com.async(rentUrl,function(resp){
                     if(resp.msg1 == 'success'){
-                        console.log('租赁成功');
+                       
                         self.labelRest.string = 24;
                         self.labelGain.string = 0;
                         self.nodeShow.active = true;
@@ -193,7 +176,7 @@ cc.Class({
                 }else{
                     cc.audioEngine.play(self.audio, false, 1);
                 }
-            console.log('关闭窗口');
+           
             cc.director.loadScene('hall');
         });
 

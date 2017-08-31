@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fd8e272b-7672-43cb-b1be-10258f98f1ce",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "鱼竿4": {
+      "ver": "1.0.3",
+      "uuid": "baefdeeb-defe-4fad-9de2-64d38330f694",
+      "rawTextureUuid": "fd8e272b-7672-43cb-b1be-10258f98f1ce",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 65,
+      "height": 26,
+      "rawWidth": 65,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

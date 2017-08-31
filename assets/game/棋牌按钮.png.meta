@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e665f3c6-9a13-42f7-bb7e-487019a2c72c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "棋牌按钮": {
+      "ver": "1.0.3",
+      "uuid": "c714eaeb-794d-4212-917c-258b88f71ab2",
+      "rawTextureUuid": "e665f3c6-9a13-42f7-bb7e-487019a2c72c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 232,
+      "height": 84,
+      "rawWidth": 232,
+      "rawHeight": 85,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

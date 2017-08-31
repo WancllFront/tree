@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f0ccf05e-9d69-4c02-b5f4-714ea7af1e9d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "二维码": {
+      "ver": "1.0.3",
+      "uuid": "e08cb269-a15f-4328-a236-dd3f300f60c7",
+      "rawTextureUuid": "f0ccf05e-9d69-4c02-b5f4-714ea7af1e9d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 234,
+      "offsetY": -10,
+      "trimX": 468,
+      "trimY": 20,
+      "width": 668,
+      "height": 619,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8cef43c1-31d2-4c2c-9b1b-a0bd3bf325fe",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "钓鱼场景底图": {
+      "ver": "1.0.3",
+      "uuid": "72cde690-a857-4119-9298-e52ef6e30637",
+      "rawTextureUuid": "8cef43c1-31d2-4c2c-9b1b-a0bd3bf325fe",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1920,
+      "height": 1080,
+      "rawWidth": 1920,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

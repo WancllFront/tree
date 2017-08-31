@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ad1420a2-925b-44d4-a8de-a312f0f58378",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "09十里桃花图片": {
+      "ver": "1.0.3",
+      "uuid": "7360a445-ea66-4148-a2e4-311542c52037",
+      "rawTextureUuid": "ad1420a2-925b-44d4-a8de-a312f0f58378",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 452.5,
+      "offsetY": -127.5,
+      "trimX": 1390,
+      "trimY": 636,
+      "width": 1325,
+      "height": 783,
+      "rawWidth": 3200,
+      "rawHeight": 1800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

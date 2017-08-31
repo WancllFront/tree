@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "602d48bc-4e49-4012-913e-95de63e983f3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "抓娃娃": {
+      "ver": "1.0.3",
+      "uuid": "79fa4f5c-170e-4621-9d29-d928c59193ec",
+      "rawTextureUuid": "602d48bc-4e49-4012-913e-95de63e983f3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 209,
+      "height": 172,
+      "rawWidth": 209,
+      "rawHeight": 172,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

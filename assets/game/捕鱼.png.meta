@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "09843b3d-9b2f-45be-a73e-31610dbcd4dc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "捕鱼": {
+      "ver": "1.0.3",
+      "uuid": "c0e828ce-9a03-4fd8-afcc-031523b29024",
+      "rawTextureUuid": "09843b3d-9b2f-45be-a73e-31610dbcd4dc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 207,
+      "height": 174,
+      "rawWidth": 207,
+      "rawHeight": 175,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

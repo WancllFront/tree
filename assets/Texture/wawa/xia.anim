@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "xia",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.4833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            18,
+            300
+          ]
+        },
+        {
+          "frame": 2.4833333333333334,
+          "value": [
+            18,
+            127.63471249988869
+          ]
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "e519f09a-d5b4-43d9-a6fe-86afacd40dd2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

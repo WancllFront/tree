@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "472cdcca-e2f0-4dd5-857d-830317734d1d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "鱼漂动态图2": {
+      "ver": "1.0.3",
+      "uuid": "bca60e78-2e0c-4c6a-9be9-0f8c41e64cf4",
+      "rawTextureUuid": "472cdcca-e2f0-4dd5-857d-830317734d1d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -44.5,
+      "offsetY": -74.5,
+      "trimX": 459,
+      "trimY": 350,
+      "width": 129,
+      "height": 88,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

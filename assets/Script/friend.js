@@ -11,10 +11,7 @@ cc.Class({
             default: null,
             type: cc.Button
         },
-        btnFriend3: {
-            default: null,
-            type: cc.Button
-        },
+       
 
         nodeContent: {
             default: null,
@@ -42,10 +39,7 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-        nodeFriend3: {
-            default: null,
-            type: cc.Node
-        },
+        
 
         labelTeamNumber:{
             default: null,
@@ -70,7 +64,7 @@ cc.Class({
             self.type = 1;
             self.getFriend();
             self.nodeFriend2.active = false;
-            self.nodeFriend3.active = false;
+            
             self.nodeFriend1.active = true;
         });
          this.btnFriend2.node.on('click',function(){
@@ -81,20 +75,10 @@ cc.Class({
              self.type = 2;
              self.getFriend();
             self.nodeFriend1.active = false;
-            self.nodeFriend3.active = false;
+           
             self.nodeFriend2.active = true;
         });
-         this.btnFriend3.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-             self.type = 3;
-             self.getFriend();
-            self.nodeFriend2.active = false;
-            self.nodeFriend1.active = false;
-            self.nodeFriend3.active = true;
-        });
+         
 
         this.btnNext.node.on('click',function(){
              if(self.radio == 2){
@@ -117,14 +101,17 @@ cc.Class({
     },
 
     getFriend: function(){
+
+
         var self = this;
         var userinfo = com.getUser();
         var list = {};
         list.uid = userinfo.ID;
         list.type = this.type;
         list.page = this.page;
-        console.log('page=='+self.page);
+       
 
+         self.nodeContent.removeAllChildren();
 
         if(this.page == 1){
             this.btnPrev.node.active = false;
@@ -163,20 +150,18 @@ cc.Class({
         this.page = 1;
         this.type = 1;
         this.btnPrev.node.active = false;
+
+         this.nodeFriend2.active = false;
+           
+            this.nodeFriend1.active = true;
         
         this.getFriend();
     },
 
     // use this for initialization
     onLoad: function () {
-        this.radio = cc.sys.localStorage.getItem('radio');
        
-        this.labelTeamNumber.string = com.getUser().Tdnum;
-        this.page = 1;
-        this.type = 1;
-        this.btnPrev.node.active = false;
         this.btnController();
-        this.getFriend();
       
     },
 

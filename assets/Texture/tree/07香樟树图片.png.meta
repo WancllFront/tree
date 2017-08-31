@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "692991c4-c37e-40cf-87c7-6dd2c5e16674",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "07香樟树图片": {
+      "ver": "1.0.3",
+      "uuid": "6e46101a-c960-455d-9345-3abac218f023",
+      "rawTextureUuid": "692991c4-c37e-40cf-87c7-6dd2c5e16674",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 10.5,
+      "offsetY": -154,
+      "trimX": 544,
+      "trimY": 638,
+      "width": 2133,
+      "height": 832,
+      "rawWidth": 3200,
+      "rawHeight": 1800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

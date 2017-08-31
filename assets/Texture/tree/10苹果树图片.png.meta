@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3f0260a2-939b-4c18-aa97-5f46fdca078c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "10苹果树图片": {
+      "ver": "1.0.3",
+      "uuid": "4c783d65-bfe7-48f2-86b6-a25a0bf2382a",
+      "rawTextureUuid": "3f0260a2-939b-4c18-aa97-5f46fdca078c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 272,
+      "offsetY": -45,
+      "trimX": 1029,
+      "trimY": 461,
+      "width": 1686,
+      "height": 968,
+      "rawWidth": 3200,
+      "rawHeight": 1800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

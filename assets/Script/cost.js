@@ -4,234 +4,79 @@ cc.Class({
 
     properties: {
         //树列表
-        nodeTreeList: {
-            default: null,
-            type:cc.Node
-        },
+        nodeTreeList: cc.Node,
 
-         btnTree1: {
-            default: null,
-            type: cc.Button
-        },
-          btnTree2: {
-            default: null,
-            type: cc.Button
-        },
-          btnTree3: {
-            default: null,
-            type: cc.Button
-        },
-          btnTree4: {
-            default: null,
-            type: cc.Button
-        },
-          btnTree5: {
-            default: null,
-            type: cc.Button
-        },
-          btnTree6: {
-            default: null,
-            type: cc.Button
-        },
+        btnTree1: cc.Button,
+        btnTree2: cc.Button,
+        btnTree3: cc.Button,
+        btnTree4: cc.Button,
+        btnTree5: cc.Button,
+        btnTree6: cc.Button,
 
-       
-        
         //树操作
-        btnTreeList: {
-            default: null,
-            type: cc.Button
-        },
-        btnPlaint: {
-            default: null,
-            type: cc.Button
-        },
-        btnWater: {
-            default: null,
-            type: cc.Button
-        },
-        btnFeed: {
-            default: null,
-            type: cc.Button
-        },
-        btnGain: {
-            default: null,
-            type: cc.Button
-        },
-         btnFeedAll: {
-            default: null,
-            type: cc.Button
-        },
-        
+        btnTreeList: cc.Button,
+        btnPlaint: cc.Button,
+        btnWater: cc.Button,
+        btnFeed: cc.Button,
+        btnGain: cc.Button,
+
+
         //土地
-        btnTudi1: {
-            default: null,
-            type: cc.Button
-        },  labelTudi1:{default:null,type:cc.Node}, nodeKuang1:{default:null,type:cc.Node},labelkuang11:{default:null,type: cc.Label},labelkuang12:{default:null,type: cc.Label},
-         btnTudi2: {
-            default: null,
-            type: cc.Button
-        },  labelTudi2:{default:null,type:cc.Node},nodeKuang2:{default:null,type:cc.Node},labelkuang21:{default:null,type: cc.Label},labelkuang22:{default:null,type: cc.Label},
-         btnTudi3: {
-            default: null,
-            type: cc.Button
-        },  labelTudi3:{default:null,type:cc.Node},nodeKuang3:{default:null,type:cc.Node},labelkuang31:{default:null,type: cc.Label},labelkuang32:{default:null,type: cc.Label},
-         btnTudi4: {
-            default: null,
-            type: cc.Button
-        },  labelTudi4:{default:null,type:cc.Node},nodeKuang4:{default:null,type:cc.Node},labelkuang41:{default:null,type: cc.Label},labelkuang42:{default:null,type: cc.Label},
-         btnTudi5: {
-            default: null,
-            type: cc.Button
-        },  labelTudi5:{default:null,type:cc.Node},nodeKuang5:{default:null,type:cc.Node},labelkuang51:{default:null,type: cc.Label},labelkuang52:{default:null,type: cc.Label},
-         btnTudi6: {
-            default: null,
-            type: cc.Button
-        },  labelTudi6:{default:null,type:cc.Node},nodeKuang6:{default:null,type:cc.Node},labelkuang61:{default:null,type: cc.Label},labelkuang62:{default:null,type: cc.Label},
+        btnTudi1: cc.Button,  nodeKuang1: cc.Node, labelkuang11: cc.Label, labelkuang12: cc.Label,
+        btnTudi2: cc.Button,  nodeKuang2: cc.Node, labelkuang21: cc.Label, labelkuang22: cc.Label,
+        btnTudi3: cc.Button,  nodeKuang3: cc.Node, labelkuang31: cc.Label, labelkuang32: cc.Label,
+        btnTudi4: cc.Button,  nodeKuang4: cc.Node, labelkuang41: cc.Label, labelkuang42: cc.Label,
+        btnTudi5: cc.Button,  nodeKuang5: cc.Node, labelkuang51: cc.Label, labelkuang52: cc.Label,
+        btnTudi6: cc.Button,  nodeKuang6: cc.Node, labelkuang61: cc.Label, labelkuang62: cc.Label,
 
 
+        nodeTipSuccess: cc.Node,
+        nodeTipError: cc.Node,
+        btnTipSuccess: cc.Button,
+        btnTipError: cc.Button,
+        labelTipSuccess: cc.Label,
+        labelTipError: cc.Label,
 
-        nodeTipSuccess: {
-            default: null,
-            type: cc.Node
-        },
-        nodeTipError: {
-            default: null,
-            type: cc.Node
-        },
-        btnTipSuccess:{
-            default:null,
-            type: cc.Button
-        },
-        btnTipError: {
-            default:null,
-            type: cc.Button
-        },
-        labelTipSuccess: {
-            default: null,
-            type: cc.Label
-        },
-         labelTipError: {
-            default: null,
-            type: cc.Label
-        },
+        prefabTree13: cc.Prefab,
+        prefabTree23: cc.Prefab,
+        prefabTree33: cc.Prefab,
+        prefabTree43: cc.Prefab,
+        prefabTree53: cc.Prefab,
+        prefabTree63: cc.Prefab,
 
+        audio: cc.AudioClip,
 
-        prefabTree11:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree12:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree13:{
-            default: null,
-            type: cc.Prefab
-        },
+        nodeTreeSelect1: cc.Node,
+        nodeTreeSelect2: cc.Node,
+        nodeTreeSelect3: cc.Node,
+        nodeTreeSelect4: cc.Node,
+        nodeTreeSelect5: cc.Node,
+        nodeTreeSelect6: cc.Node,
 
-        prefabTree21:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree22:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree23:{
-            default: null,
-            type: cc.Prefab
-        },
-
-        prefabTree31:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree32:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree33:{
-            default: null,
-            type: cc.Prefab
-        },
-
-        prefabTree41:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree42:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree43:{
-            default: null,
-            type: cc.Prefab
-        },
-
-        prefabTree51:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree52:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree53:{
-            default: null,
-            type: cc.Prefab
-        },
-
-        prefabTree61:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree62:{
-            default: null,
-            type: cc.Prefab
-        },
-         prefabTree63:{
-            default: null,
-            type: cc.Prefab
-        },
-
-        audio: {
-            url: cc.AudioClip,
-            default: null
-        },
-
-
-
-
-        nodeTreeSelect1:{
-            default: null,
-            type: cc.Node
-        },
-         nodeTreeSelect2:{
-            default: null,
-            type: cc.Node
-        },
-         nodeTreeSelect3:{
-            default: null,
-            type: cc.Node
-        },
-         nodeTreeSelect4:{
-            default: null,
-            type: cc.Node
-        },
-         nodeTreeSelect5:{
-            default: null,
-            type: cc.Node
-        },
-         nodeTreeSelect6:{
-            default: null,
-            type: cc.Node
-        },
-
-
-
+        nodeTree: cc.Node
     },
 
-    btnController: function(){
+    btnTreeHandler: function (grade) {
+        var self = this;
+        if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+
+        window.treeGrade = grade;
+
+        var nodeTreeSelectindex = 'nodeTreeSelect' + grade;
+        self[nodeTreeSelectindex].active = true;
+        for (var i = 1; i < 7; i++) {
+            if (i != grade) {
+                self['nodeTreeSelect' + i].active = false;
+            }
+        }
+        self.updateTree(window.cacheTree[grade], grade);
+        self.nodeTreeList.active = false;
+        for (var oo = 1; oo < 7; oo++) {
+            self['nodeKuang' + oo].active = false;
+        }
+    },
+
+    btnController: function () {
         var self = this;
         var userinfo = com.getUser();
         var uid = userinfo.ID;
@@ -240,540 +85,255 @@ cc.Class({
         //土地编号
         var no = '';
         //树编号
-        var grade =   window.treeGrade ||userinfo.tlevel || 1;
+        var grade = window.treeGrade || userinfo.tlevel || 1;
         //初始化树的显示
-       self['nodeTreeSelect'+grade].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
+        self['nodeTreeSelect' + grade].active = true;
+        for (var i = 1; i < 7; i++) {
+            if (i != grade) {
+                self['nodeTreeSelect' + i].active = false;
             }
+        }
 
+        self.updateTree(window.cacheTree[grade], grade);
 
-        this.loadTreeInfo(grade);
-
-        this.btnTreeList.node.on('click',function(){
-            if(self.radio == 2){
-            }else{
+        this.btnTreeList.node.on('click', function () {
+            if (self.radio == 2) {
+            } else {
                 cc.audioEngine.play(self.audio, false, 1);
             }
-            self.nodeTreeList.active = ! self.nodeTreeList.active;
+            self.nodeTreeList.active = !self.nodeTreeList.active;
         });
 
         //选择树
-        this.btnTree1.node.on('click',function(){
-            if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-
-            grade = 1;
-            window.treeGrade = 1;
-
-            var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-
-           
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-
-
-             
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
-
+        this.btnTree1.node.on('click', function () {
+            self.btnTreeHandler(1);
         });
-         this.btnTree2.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-             grade = 2;
-             window.treeGrade = 2;
-              var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-            
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
+        this.btnTree2.node.on('click', function () {
+            self.btnTreeHandler(2);
         });
-         this.btnTree3.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-
-             grade = 3;
-             window.treeGrade = 3;
-              var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-           
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
+        this.btnTree3.node.on('click', function () {
+            self.btnTreeHandler(3);
         });
-         this.btnTree4.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-             grade = 4;
-             window.treeGrade = 4;
-              var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-            
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
+        this.btnTree4.node.on('click', function () {
+            self.btnTreeHandler(4);
         });
-         this.btnTree5.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-             grade = 5;
-             window.treeGrade = 5;
-              var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-            
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
+        this.btnTree5.node.on('click', function () {
+            self.btnTreeHandler(5);
         });
-         this.btnTree6.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-             grade = 6;
-             window.treeGrade = 6;
-              var nodeTreeSelectindex = 'nodeTreeSelect'+grade;
-            self[nodeTreeSelectindex].active = true;
-            for(var i = 1; i<7;i++){
-                if(i != grade){
-                    self['nodeTreeSelect'+i].active = false;
-                }
-            }
-            
-            self.loadTreeInfo(grade);
-            self.nodeTreeList.active = false;
-
-             for(var oo = 1; oo < 7; oo++){
-                     self['nodeKuang'+oo].active = false;
-             }
-
+        this.btnTree6.node.on('click', function () {
+            self.btnTreeHandler(6);
         });
-
 
         //树操作
-        this.btnPlaint.node.on('click',function(){
-            console.log('种植');
-            
-            if(self.radio == 2){
-            }else{
-                 
-                cc.audioEngine.play(self.audio, false, 1);
-            }
+
+        this.btnPlaint.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             actype = 1;
         });
-        this.btnWater.node.on('click',function(){
-            console.log('浇水');
+        this.btnWater.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             actype = 2;
-            
-            if(self.radio == 2){
-            }else{
-                
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
         });
-        this.btnFeed.node.on('click',function(){
-            console.log('施肥');
+        this.btnFeed.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             actype = 3;
-           
-            if(self.radio == 2){
-            }else{
-                
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
         });
-        this.btnGain.node.on('click',function(){
-            console.log('采摘');
+        this.btnGain.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             actype = 4;
-            
-            if(self.radio == 2){
-            }else{
-                
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-        });
-
-        //一键施肥
-         this.btnFeedAll.node.on('click',function(){
-           
-            console.log(' -  -------一键施肥');
-            
-            actype = 11;
-            
-            if(self.radio == 2){
-            }else{
-                
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-            self.treeAction(uid,'',grade,actype);
-            actype = '';
-
         });
 
         //点击土地
-         this.btnTudi1.node.on('click',function(){
-               if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-            no = 1;
-             if(actype != ''){
-                console.log('点击土地1');
-                self.treeAction(uid,no,grade,actype);   
-                actype = '';
-             }
-            
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
-
-           
+        this.btnTudi1.node.on('click', function () {
+            self.tudiAction(uid, 1, grade, actype)
         });
-
-         this.btnTudi2.node.on('click',function(){
-               if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-             
-            no = 2;
-            if(actype != ''){
-                console.log('点击土地2');
-                self.treeAction(uid,no,grade,actype);   
-               actype = '';
-             }
-           
-
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
-
+        this.btnTudi2.node.on('click', function () {
+            self.tudiAction(uid, 2, grade, actype)
         });
-         this.btnTudi3.node.on('click',function(){
-
-               if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-                no = 3;
-           if(actype != ''){
-               console.log('点击土地3');
-                
-                self.treeAction(uid,no,grade,actype);   
-               actype = '';
-             }
-           
-
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
+        this.btnTudi3.node.on('click', function () {
+            self.tudiAction(uid, 3, grade, actype)
         });
-         this.btnTudi4.node.on('click',function(){
-
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-                no = 4;
-           if(actype != ''){
-               console.log('点击土地4');
-                self.treeAction(uid,no,grade,actype);   
-               actype = '';
-             }
-           
-
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
+        this.btnTudi4.node.on('click', function () {
+            self.tudiAction(uid, 4, grade, actype)
         });
-         this.btnTudi5.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-                no = 5;
-           if(actype != ''){
-               console.log('点击土地5');
-                self.treeAction(uid,no,grade,actype);   
-               actype = '';
-             }
-            
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
+        this.btnTudi5.node.on('click', function () {
+            self.tudiAction(uid, 5, grade, actype)
         });
-         this.btnTudi6.node.on('click',function(){
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
-
-
-                no = 6;
-           if(actype != ''){
-               console.log('点击土地6');
-               self.treeAction(uid,no,grade,actype);   
-               actype = '';
-             
-            }
-           
-
-             var nodeKuangIndex = 'nodeKuang'+no;
-             self[nodeKuangIndex].active = true;
-             for(var oo = 1; oo < 7; oo++){
-                 if(oo!=no){
-                     self['nodeKuang'+oo].active = false;
-                 }
-             }
+        this.btnTudi6.node.on('click', function () {
+            self.tudiAction(uid, 6, grade, actype)
         });
-
-
 
         ///提示框
-         this.btnTipSuccess.node.on('click',function(){
+        this.btnTipSuccess.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             self.nodeTipSuccess.active = false;
-
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
         });
-         this.btnTipError.node.on('click',function(){
+        this.btnTipError.node.on('click', function () {
+            if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
             self.nodeTipError.active = false;
-
-              if(self.radio == 2){
-            }else{
-                cc.audioEngine.play(self.audio, false, 1);
-            }
         });
-        
-        
-
     },
 
-    treeAction: function(uid,no,grade,actype){
+    tudiAction: function (uid, no, grade, actype) {
         var self = this;
-        if(actype == 2){
-                 this.nodeTipSuccess.active = true;
-                 this.labelTipSuccess.string = '浇水成功';
-        }else{
-            var list = [];
-            list.uid = uid;
-            list.no = no;
-            list.actype = actype;
-            list.grade = grade;
-            com.treeAction(list,function(resp){
-                    if(resp.msg1 == 'success'){
-                       
-                        if(actype == 1){
-                            self.nodeTipSuccess.active = true;
-                            self.labelTipSuccess.string = '种植成功';
-                            self.loadTreeInfo(grade);
-                        }else if(actype ==3){
-                          
-                            self.loadTreeInfo(grade);
-                        }else if(actype == 4){
-                            com.updateUser();
-                            self.nodeTipSuccess.active = true;
-                            self.labelTipSuccess.string = '采摘成功！树呗余额:'+resp.msg3.XjCredits;
-                            
-                            self.loadTreeInfo(grade);
-                        }else if(actype == 11){
-                            self.nodeTipSuccess.active = true;
-                            self.labelTipSuccess.string = resp.msg2;
-                          
-                             self.loadTreeInfo(grade);
-                        }
-                    }else{
-                        self.nodeTipError.active = true;
-                        self.labelTipError.string = resp.msg2 || '失败';
-                    }
-            });
+        if (self.radio == 2) { } else { cc.audioEngine.play(self.audio, false, 1); }
+        if (actype != '') {
+            self.treeAction(uid, no, grade, actype);
+            actype = '';
         }
-        
+        var nodeKuangIndex = 'nodeKuang' + no;
+        self[nodeKuangIndex].active = true;
+        for (var oo = 1; oo < 7; oo++) {
+            if (oo != no) {
+                self['nodeKuang' + oo].active = false;
+            }
+        }
     },
 
-     loadTreeInfo: function(grade){
+    treeAction: function (uid, no, grade, actype) {
+        var self = this;
+        if (actype == 2) {
+            this.nodeTipSuccess.active = true;
+            this.labelTipSuccess.string = '浇水成功';
+        } else if (actype == 3) {
+            this.nodeTipSuccess.active = true;
+            this.labelTipSuccess.string = '施肥成功';
+        } else if (actype == 4) {
+            this.nodeTipSuccess.active = true;
+            this.labelTipSuccess.string = '已默认采摘';
+        }
+        else if (actype == 1) {
+            this.nodeTipSuccess.active = true;
+            this.labelTipSuccess.string = '已经种植';
+        }
+    },
+
+    //从服务端加载树信息
+    loadTreeInfo: function (grade) {
         var self = this;
         var uid = com.getUser().ID;
         var url = com.yuming + com.treelst;
         var list = {};
-        console.log('grade == '+ grade+'--'+'uid == '+uid);
         list.uid = uid;
         list.grade = grade;
-        com.async(url,function(resp){
-            if(resp.msg1 == 'success'){
+
+        //移除所有树
+        for (var j = 1; j < 7; j++) {
+            self['btnTudi' + (j)].node.removeAllChildren(true);
+        }
+
+        com.async(url, function (resp) {
+            if (resp.msg1 == 'success') {
 
                 var treeInfo = resp.msg3;
-                console.log(resp.msg3.length);
-                for(var j =1 ;j<7;j++){
-                     self['btnTudi'+(j)].node.removeAllChildren(true);
-                     for(var i = 0 ;i<treeInfo.length;i++){
+                //更新本地缓存树
+                window.cacheTree[list.grade] = treeInfo;
 
-                         if(treeInfo[i].no == j){
-                           // var index = 'labelTudi'+(j);
-                           // self[index].string = ' status:'+treeInfo[i].status+' 第:'+(treeInfo[i].lunshu)+'轮'+' 施肥'+treeInfo[i].shifei+(treeInfo[i].shifei == 6 ? '成熟':'');
-                            var labelKuangIndex1 = ('labelkuang'+j)+1;
-                            self[labelKuangIndex1].string = 6-treeInfo[i].shifei;
-                            var labelKuangIndex2 = ('labelkuang'+j)+2;
-                            self[labelKuangIndex2].string = treeInfo[i].lunshu;
+                self.updateTree(treeInfo, list.grade);
 
-                            var index = 'labelTudi'+(j);
-                            if(treeInfo[i].shifei == 6){
-                                 
-                                 self[index].active = true;
-                            }else{
-                                self[index].active = false;
-                            }
-                            
-                            
-                                //新建树对象
-                                var index2 = ('prefabTree'+grade)+treeInfo[i].status;
-                                var tree = cc.instantiate(self[index2]);
-                                //console.log('index2 == '+index2+' j=='+j)
-                                
-                                if(j == 1){
-                                    tree.setPosition(-2,0);
-                                }else if(j == 2){
-                                    tree.setPosition(-8,5);
-                                }else if(j == 3){
-                                    tree.setPosition(0,0);
-                                }else if(j == 4){
-                                    tree.setPosition(-5,33);
-                                }else if(j == 5){
-                                    tree.setPosition(15,5);
-                                }else if(j == 6){
-                                    tree.setPosition(-3,10);
-                                }
-                                
-                               //添加树
-                               self['btnTudi'+(j)].node.addChild(tree);
-                            break;
-                         }
-                    }
-                    if(i == treeInfo.length){
-                          var labelKuangIndex1 = ('labelkuang'+j)+1;
-                            self[labelKuangIndex1].string = '';
-                            var labelKuangIndex2 = ('labelkuang'+j)+2;
-                            self[labelKuangIndex2].string = '';
-                            var index = 'labelTudi'+(j);
-                            self[index].active = false;
-                    }
-
-                }
-               
             }
-        },list);
+        }, list);
     },
 
-    // use this for initialization
-    onLoad: function () {
+    //渲染树
+    updateTree: function (treeInfo, grade) {
 
-        this.music = cc.sys.localStorage.getItem('music');
+        if(!treeInfo){
+            this.cacheTree()
+            return;
+        }
+
+        var self = this;
+        self.nodeTree.removeAllChildren();
+        for (var j = 1; j < 7; j++) {
+
+            for (var i = 0; i < treeInfo.length; i++) {
+                if (treeInfo[i].no == j) {
+
+                    //新建树对象
+                    var index2 = 'prefabTree' + grade + '' + 3//('prefabTree'+grade)+3//treeInfo[i].status;
+                    var tree = cc.instantiate(self[index2]);
+                    tree.setPosition(-2, 0);
+                    //添加树
+                    self.nodeTree.addChild(tree);
+
+                    //距离收获
+                    var labelKuangIndex1 = ('labelkuang' + j) + 1;
+
+                    if (treeInfo[i].lunshu == 10) {
+                        self[labelKuangIndex1].string = '';
+                    } else {
+                        self[labelKuangIndex1].string = 6 - treeInfo[i].shifei;
+                    }
+
+                    var labelKuangIndex2 = ('labelkuang' + j) + 2;
+                    self[labelKuangIndex2].string = treeInfo[i].lunshu;
+
+                    break;
+                }
+            }
+            if (i == treeInfo.length) {
+                var labelKuangIndex1 = ('labelkuang' + j) + 1;
+                self[labelKuangIndex1].string = '';
+                var labelKuangIndex2 = ('labelkuang' + j) + 2;
+                self[labelKuangIndex2].string = '';
+            }
+
+        }
+    },
+
+    //本地缓存树信息
+    cacheTree: function () {
+        var self = this;
+        window.isFinishLoad = false;
+        window.cacheTree = [];
+        var uid = com.getUser().ID;
+        var url = com.yuming + com.treelst;
+        var list = {};
+        list.uid = uid;
+        for (var i = 1; i <= 6; i++) {
+            list.grade = i;
+            self.asyncTree(url, list, i);
+        }
+    },
+
+    asyncTree: function (url, list, i) {
+        var self = this;
+        com.async(url, (resp) => {
+
+            if (resp.msg1 == 'success') {
+                window.cacheTree[i] = resp.msg3;
+            } else {
+                window.isFinishLoad = false;
+                self.nodeTipError.active = true;
+                self.labelTipError.string = resp.msg2 || '加载失败,请退出游戏检查网络';
+                setTimeout(function () {
+                    cc.director.loadScene('index');
+                }, 2000);
+            }
+            this.count++;
+            if (self.count == 6) {
+                window.isFinishLoad = true;
+                window.loadDate = new Date().getDate();
+                self.btnController();
+            }
+        }, list)
+    },
+
+    onEnable: function () {
         this.radio = cc.sys.localStorage.getItem('radio');
-       
-        this.btnController();
         this.timer = 0;
     },
 
+    onLoad: function () {
+        this.count = 0;
+       // console.log(JSON.stringify(window.cacheTree))
+        if (!window.cacheTree || !window.isFinishLoad || window.loadDate != new Date().getDate()) {
+           // this.btnController();
+            this.cacheTree();
+        } else {
+            this.btnController();
+        }
+    },
 
-
-    // called every frame, uncomment this function to activate update callback
-     update: function (dt) {
-
-     },
 });

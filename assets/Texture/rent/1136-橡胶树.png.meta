@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "5cca0618-b589-47c7-9518-c750b43b0252",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "1136-橡胶树": {
+      "ver": "1.0.3",
+      "uuid": "3d94d5fb-7e0a-48fe-a773-cf96bbe9baff",
+      "rawTextureUuid": "5cca0618-b589-47c7-9518-c750b43b0252",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 37,
+      "offsetY": 4,
+      "trimX": 74,
+      "trimY": 0,
+      "width": 1062,
+      "height": 631,
+      "rawWidth": 1136,
+      "rawHeight": 639,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

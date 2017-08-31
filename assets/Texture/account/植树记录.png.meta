@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "acdb2fae-dcee-46f4-a8be-c1fd65366ca9",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "植树记录": {
+      "ver": "1.0.3",
+      "uuid": "0275e651-0c45-4cec-9d76-38a281e6a24a",
+      "rawTextureUuid": "acdb2fae-dcee-46f4-a8be-c1fd65366ca9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 196,
+      "height": 51,
+      "rawWidth": 196,
+      "rawHeight": 51,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

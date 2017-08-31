@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "鱼漂",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.5,
+  "sample": 2,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "29800865-0394-483c-9c70-3e91e2a4b770"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "bca60e78-2e0c-4c6a-9be9-0f8c41e64cf4"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "eaa0e445-ee60-46e3-990e-9e887b51481d"
+            }
+          }
+        ]
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

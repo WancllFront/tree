@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ac7981f1-e89e-43eb-903d-738073b99c24",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "欢乐捕鱼": {
+      "ver": "1.0.3",
+      "uuid": "4f80fc78-06c6-42da-8dae-acd016950630",
+      "rawTextureUuid": "ac7981f1-e89e-43eb-903d-738073b99c24",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2,
+      "offsetY": 0.5,
+      "trimX": 5,
+      "trimY": 0,
+      "width": 253,
+      "height": 196,
+      "rawWidth": 259,
+      "rawHeight": 197,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
