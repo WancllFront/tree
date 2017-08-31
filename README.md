@@ -1,4 +1,4 @@
 # a simple cocoscreator project
-`install cocoscretor
+`install cocoscretor v1.5.1
  open and enjoy 
 `
